@@ -1,0 +1,21 @@
+{% extends 'cabecalho.njk' %}
+
+{% block body %}
+<section class="variosLivros">
+        <h3>Mais Vendidos</h3>
+        <hr>
+    
+       
+    
+    <div class="container" id="listaLivros">
+        {% for livro in livros.items %}
+            <a href='livro/{{livro.id}}'>
+                <div class="col-3">
+                    <img width="250px" height="auto" src="{{livro.volumeInfo.imageLinks.thumbnail}}"><br>
+                  
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{{BASE_URL}}style/style.css" type="text/css">
+    <link rel="stylesheet" href="{{BASE_URL}}style/grid.css">
+    <title>Trabalho</title>
+</head>
+<body>
+    <div id="header">
+        <a href="#"><img src="/img/livraria.png"  alt=""></a>
+
+        <nav>
+            <li><a href="/">Home</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Lancamentos">Lançamentos</a></li>
+            <li><a href="#Contato">Contato</a></li>
+            <form method="get" action="/livros">
+                <input type="text" name="busca" id="query">
+                <button type="submit">Enviar</button>
+            </form>                                         
+        </nav>
+    </div>
+    <section class="imagem_LivroGrande">
+        <h1>Loucos por literatura fantástica</h1>
+        <h3>Os melhores títulos você encontra aqui</h3>
+        <a class="btn" href="">Saiba mais</a>
+    </section>
+
+    {% block body %}
+    {% endblock %}
+
+    
+<div id="footer" class="col-12">
+        <ul>
+            <div class="col-2"><li><a href=""><img class="imagem_redes" src="/img/skype.png" alt=""></a></li> </div>
+            <div class="col-2"><li><a href=""><img class="imagem_redes" src="/img/twitter.png" alt=""></a></li> </div>
+            <div class="col-2"><li><a href=""><img class="imagem_redes" src="/img/youtube.png" alt=""></a></li> </div>
+            <div class="col-2"><li><a href=""><img class="imagem_redes" src="/img/facebook.png" alt=""></a></li> </div>
+            <div class="col-2"><li><a href=""><img class="imagem_redes" src="/img/instagram.png" alt=""></a></li> </div>     
+        </ul>
+        <div class="col-12">
+        <p>"Um leitor vive mil vidas antes de morrer, o homem que nunca lê vive apenas uma."</p>
+        <p>George R.R Martin</p>
+     </div>
+
+
+</div>
+
+    
+
+    
+</body>
+</html>

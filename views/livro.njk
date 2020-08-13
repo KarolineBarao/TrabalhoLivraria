@@ -1,0 +1,18 @@
+{% extends 'cabecalho.njk' %}
+
+{% block body %}
+<section class="variosLivros">
+    <div class="col-4">
+    <img src='{{livro.imageLinks.medium}}'>
+    </div>
+    <div class="col-2">
+        <p><b>Título:</b> {{livro.title}}</p>
+        <p><b>Autor:</b> {{livro.authors}}</p>
+        <p><b>Editora:</b> {{livro.publisher}}</p>
+        <p><b>Ano:</b> {{livro.publishedDate}}</p>
+        <p><b>Páginas:</b> {{livro.pageCount}}</p>
+        <p><b>Idioma:</b> {{livro.language}}</p>
+        <p><b>Descrição:</b> {{livro.description}}</p>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+
+/*HEADAR*/
+
+#header{
+    background-color: rgb(19, 18, 18);
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+#header img{
+    width: 200px;
+}
+
+#header nav{
+    display: flex;
+}
+
+#header li a{
+    color: aliceblue;
+}
+
+#header li{
+    margin: 0 15px;
+}
+
+#header li:first-child{
+    margin-left: 0;
+}
+
+#header li:last-child{
+    margin-right: 0;
+}
+
+@media(max-width:700px){
+    #header{flex-direction: column;}
+    #header img{margin-bottom: 15px }
+}
+
+/*main*/
+
+.imagem_LivroGrande{
+    background-image: url("../img/livraria-book2.png");
+    background-size: cover;
+    min-height: 100vh;
+    color: #f1f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.imagem_LivroGrande h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.imagem_LivroGrande h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.imagem_LivroGrande .btn{
+    color: #34abb1;   
+    border-radius: 4px;    
+    padding:  20px 50px;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0.1em 0.2em black;
+
+}
+
+@media(max-width:700px){
+    .imagem_LivroGrande h1 {font-size: 2.5rem}
+    .imagem_LivroGrande h3 {font-size: 1.5rem}
+}
+
+/**/
+
+.variosLivros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    margin: 40px 0 0 0;
+}
+
+.variosLivros h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.variosLivros hr{
+    width: 200px;
+    height: 2px;
+    background-color: #34abb1;  
+    margin-bottom: 70px;
+    text-align: center;
+    border: none;
+}
+
+.variosLivros .grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.variosLivros .grid li{
+    
+    height: 100%;
+    padding: 30px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+
+.variosLivros .grid  {
+    flex-basis: 100%;
+}
+
+.preco{
+    display: flex;
+    padding: 0;
+    background-color: #34abb1;
+    font-size: 20px;
+    color: #f1f5f5;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+@media(max-width:850px){
+    .variosLivros .grid li a {flex-direction: column}
+}
+
+/*FOOTER*/
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(19, 18, 18);
+    padding: 50px 0;
+    align-items: center;
+    align-content: space-between;
+}
+
+#footer ul{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#footer ul li{
+    margin-right: 10px;
+}
+
+#footer ul li:last-child{
+    margin-right: 0;
+}
+
+#footer p{
+    color: #f1f5f5;
+    text-align: center;
+}
+.imagem_redes{
+    padding: 15px;
+    width: 80px;
+}
